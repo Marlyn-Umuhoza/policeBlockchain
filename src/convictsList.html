@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="#">
+        <title>PB convict list</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="includes/images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/css/util.css">
+    <link rel="stylesheet" type="text/css" href="includes/css/main.css">
+    <!--===============================================================================================-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.php">
+        Police Blockchain Dashboard
+    </a>
+    
+    
+      <ul class="navbar  ">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="usersList.html">View User</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="addUser.html">Add User</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="convictsList.html">View Convict</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="addConvicts.html">Add Convict</a>
+          </li>
+        </ul>
+</nav>
+     <tr>
+      <td width="60%"></td><td> <h3><p id="accountAddress" class="text-center"></p></h3> </td></tr> 
+   </table>
+      <tr><td width="30%"></td><td>   
+<span class="login100-form-title p-b-40 pt-5">Convicts List</span>
+            <table width="70%" align="center" style="margin-left:15%; margin-right:15%" class="d-table">
+              <thead>
+                <tr style="background:#132C5D; color: white">
+                  <th style="padding: 15px ">Prisoner ID</th>
+                  <th>Prison ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>OffenceID</th>
+                  <th>Offence description</th>
+                  <th>sentenceID</th>
+                  <th>sentence duration</th>
+                </tr>
+              </thead>
+              <tbody id="recordsResults" style="padding: 10px">
+              </tbody>
+            </table>      
+      
+  </td><td width="10"></td> <td width="10"></td></tr>
+    </table>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<html lang="en">
+  <head>
+    <title>User details</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="includes/images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="includes/css/util.css">
+    <link rel="stylesheet" type="text/css" href="includes/css/main.css">
+    <!--===============================================================================================-->
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.php">
+        Police Blockchain Dashboard
+    </a>
+    
+    
+      <ul class="navbar  ">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="usersList.html">View User</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="addUser.html">Add User</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="convictsList.html">View Convict</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="addConvicts.html">Add Convict</a>
+          </li>
+        </ul>
+</nav>
+    <table height="500" width="100%" align="center">
+      <tr height= "20"></tr>
+      <tr> <td width="200"></td><td>
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100 p-t-85 p-b-20">
+            
+    <form onSubmit="App.castAddress(); return false;">
+        <div class="form-group">
+            <!--<label>Public key</label> 
+            <input type="" name="pubKey" id="pubKey"></input></br>-->
+<span class="login100-form-title p-b-40 pt-5">Users List</span>
+            <div class="wrap-input100 validate-input m-t-35 m-b-35" data-validate = "Enter Public key">
+                    <input class="input100" type="text" name="pubKey" id="pubKey" required>
+                    <span class="focus-input100" data-placeholder="Public key"></span>
+                </div>
+            <!--<label>First name</label>
+            <input type="" name="fName" id="fName"></input></br>-->
+            <div class="wrap-input100 validate-input m-t-35 m-b-35" data-validate = "Enter First Name">
+                    <input class="input100" type="text" name="fName" id="fName" required>
+                    <span class="focus-input100" data-placeholder="First Name"></span>
+                </div>
+            <div class="wrap-input100 validate-input m-t-35 m-b-35" data-validate = "Enter Last Name">
+                    <input class="input100" type="text" name="lName" id="lName" required>
+                    <span class="focus-input100" data-placeholder="Last Name"></span>
+                </div>
+        </div>
+
+        <div class="container-login100-form-btn">
+        <!--<button type="submit" class="btn btn-primary" style="background: #041029">Add user</button>-->
+        <input type="submit" class="login100-form-btn" value="Add user" name="submit">
+    </div>
+
+        <div class="container-login100-form-btn m-t-35 m-b-10">
+                    <a href="index.html" class="login100-form-btn"> < Back</a>
+                </div>
+    </form>
+</div></div></div>
+    </td> <td width="100"></td></tr>
+</table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+
+<!--===============================================================================================-->
+<script src="includes/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+<script src="includes/vendor/bootstrap/js/popper.js"></script>
+<script src="includes/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="includes/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="includes/vendor/daterangepicker/moment.min.js"></script>
+<script src="includes/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+<script src="includes/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+<script src="includes/js/main.js"></script>
+  </body>
+</html>
